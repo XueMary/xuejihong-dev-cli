@@ -16,5 +16,7 @@
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
-  "private": true
+  "publishConfig": {
+    "access": "public"
+  }
 }
