@@ -21,5 +21,7 @@
   },
   "dependencies": {
     "@xuejihong-cli/utils": "^1.0.1"
-  }
+  },
+  "gitHead": "ed532d5a8e00d91a5f15606f68937e5d3636a3a5",
+  "private": true
 }
