@@ -1,6 +1,6 @@
 {
   "name": "@xuejihong-cli/core",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "> TODO: description",
   "author": "薛纪洪 <632565970@qq.com>",
   "homepage": "",
@@ -17,6 +17,6 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@xuejihong-cli/utils": "^1.0.0"
+    "@xuejihong-cli/utils": "^1.0.1"
   }
 }
