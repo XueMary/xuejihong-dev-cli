@@ -11,7 +11,7 @@
     "test": "__tests__"
   },
   "bin": {
-    "xue": "bin/index.js"
+    "xue": "cli.js"
   },
   "files": [
     "lib"
@@ -20,7 +20,11 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@xuejihong-cli/utils": "^1.0.5"
+    "@xuejihong-cli/utils": "^1.0.5",
+    "dedent": "^0.7.0",
+    "import-local": "^3.0.3",
+    "npmlog": "^6.0.0",
+    "yargs": "^17.2.1"
   },
   "gitHead": "ed532d5a8e00d91a5f15606f68937e5d3636a3a5",
   "publishConfig": {
