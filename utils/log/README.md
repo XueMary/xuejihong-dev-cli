@@ -1,11 +1,11 @@
-# `core`
+# `@xuejihong-cli/log`
 
 > TODO: description
 
 ## Usage
 
 ```
-const core = require('core');
+const log = require('@xuejihong-cli/log');
 
 // TODO: DEMONSTRATE API
 ```
