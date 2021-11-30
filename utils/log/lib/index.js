@@ -1,8 +1,7 @@
 'use strict';
 
-module.exports = index;
-
 const log = require('npmlog')
-function index() {
-    log.info('cli info')
-}
+log.heading = 'xue'
+log.addLevel('success', 2000, {fg:'green', bg: 'red'})
+
+module.exports = log;
