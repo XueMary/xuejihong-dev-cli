@@ -20,8 +20,8 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@xuejihong-cli/utils": "file:../../utils/utils",
     "@xuejihong-cli/log": "file:../../utils/log",
+    "@xuejihong-cli/utils": "file:../../utils/utils",
     "dedent": "^0.7.0",
     "import-local": "^3.0.3",
     "npmlog": "^6.0.0",
