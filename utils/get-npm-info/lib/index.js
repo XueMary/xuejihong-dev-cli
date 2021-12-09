@@ -4,7 +4,7 @@ const axios = require('axios')
 const urlJoin = require('url-join')
 const semver = require('semver')
 
-function getNpmInfo(npmName, registry = 'https://registry.npmjs.org') {
+function getNpmInfo(npmName, registry = 'https://registry.npmmirror.com') {
     if (!npmName || !registry) {
         return null
     }

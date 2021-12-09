@@ -20,6 +20,29 @@ async function core() {
         checkUserHomeDir()
         checkInputArgs()
         checkEnv()
+
+        const { Command } = require('commander');
+        const program = new Command();
+
+        
+
+        program.usage('<command> [options]');
+        program.option('-e, --env [envName]', '环境变量', 'dev');
+        program.version(pkg.version);
+        
+
+        program
+            .command('init [productName]')
+            .description('项目初始化')
+            .option('-f, --force', '项目强制覆盖', false)
+            .action((productName, cmdOptions) => {
+                console.log(productName, cmdOptions, program.opts());
+            });
+
+        program.parse(process.argv)
+
+        // console.log(program.opts())
+
         await checkUpdateVersion()
     } catch (error) {
         log.error(error.message)
@@ -93,7 +116,7 @@ async function checkUpdateVersion() {
     const version = pkg.version
     const { getGtCurrentVersions } = require('@xuejihong-cli/get-npm-info')
     const gtVersions = await getGtCurrentVersions(version, pkgName)
-    if(gtVersions) {
+    if (gtVersions) {
         const lastVersion = gtVersions[0]
         log.warn(colors.yellow(`
             有新版本${lastVersion}; 当前版本${version}

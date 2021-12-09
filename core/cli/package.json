@@ -20,10 +20,11 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
+    "@xuejihong-cli/get-npm-info": "file:../../utils/get-npm-info",
     "@xuejihong-cli/log": "file:../../utils/log",
     "@xuejihong-cli/utils": "file:../../utils/utils",
-    "@xuejihong-cli/get-npm-info": "file:../../utils/get-npm-info",
     "colors": "^1.4.0",
+    "commander": "^8.3.0",
     "dedent": "^0.7.0",
     "dotenv": "^10.0.0",
     "import-local": "^3.0.3",
